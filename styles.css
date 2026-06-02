@@ -5,26 +5,43 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 200px; /* Give it a minimum height */
+    padding: 20px;     /* Add padding so it doesn't touch edges */
     margin: 0;
     color: #8C6F78;
 }
 
-.mode-controls { display: flex; gap: 10px; margin-bottom: 15px; }
+.mode-controls { display: flex; gap: 12px; margin-bottom: 19px; }
 .mode-btn {
-    padding: 5px 10px; cursor: pointer; background-color: #E6BCC8;
+    padding: 7px 17px; cursor: pointer; background-color: #E6BCC8;
     border: none; border-radius: 4px; color: #5D434B; font-size: 0.7rem;
 }
 
-#timer { display: flex; gap: 10px; font-size: 2.5rem; font-weight: bold; margin-bottom: 15px; }
+#timer { display: flex; gap: 2vw; font-size: 8vw; font-weight: bold; margin-bottom: 20px; }
 .box {
-    background-color: #F8DFE8; padding: 8px 12px;
-    border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #F8DFE8; 
+    padding: 2vw 3vw;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.icon-controls { display: flex; gap: 25px; }
-.icon-btn {
-    cursor: pointer; background-color: #F8DFE8; border: none;
-    border-radius: 8px; padding: 10px; display: flex; align-items: center;
+.icon-controls { 
+    display: flex; 
+    gap: 4.5vw; 
 }
-svg { width: 20px; height: 20px; fill: #5D434B; }
+
+.icon-btn {
+    cursor: pointer; 
+    background-color: #E6BCC8; 
+    border: none;
+    border-radius: 8px; 
+    padding: 8px 15px; 
+    display: flex; 
+    align-items: center;
+}
+
+svg { 
+    width: 4vw; /* Scales with the width */
+    height: 4vw; 
+    fill: #5D434B;
+}
