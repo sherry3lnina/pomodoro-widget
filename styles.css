@@ -5,53 +5,50 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    margin: 0;
+    /* Fixed width prevents stretching */
+    width: 280px; 
+    margin: 0 auto;
+    padding: 10px;
     color: #8C6F78;
 }
 
-/* Container to keep everything centered and aligned */
 .widget-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
 }
 
-/* Mode Buttons (Top) */
-.mode-controls { display: flex; gap: 10px; justify-content: center; width: 100%; }
+.mode-controls { display: flex; gap: 8px; justify-content: center; }
 .mode-btn {
     padding: 6px 12px; cursor: pointer; background-color: #E6BCC8;
-    border: none; border-radius: 6px; color: #5D434B; font-weight: bold; font-size: 0.8rem;
+    border: none; border-radius: 6px; color: #5D434B; font-weight: bold; font-size: 0.75rem;
 }
 
-/* Timer Boxes (Larger) */
 #timer { display: flex; gap: 15px; align-items: center; }
 .box {
     background-color: #F8DFE8;
-    width: 100px; /* Larger than controls */
-    height: 100px;
+    /* Fixed sizes keep them square and stable */
+    width: 90px; 
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Control Buttons (Bottom - aligned with timer) */
-.icon-controls { 
-    display: flex; 
-    gap: 10px; 
-    justify-content: center; 
-    width: 100%; 
-}
+.icon-controls { display: flex; gap: 10px; justify-content: center; }
 .icon-btn {
     cursor: pointer; background-color: #F8DFE8; border: none;
-    border-radius: 8px; width: 50px; height: 50px; /* Smaller than timer */
+    border-radius: 8px; 
+    /* Fixed sizes keep buttons from changing shape */
+    width: 45px; height: 45px; 
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-svg { width: 24px; height: 24px; fill: #5D434B; }
+svg { width: 22px; height: 22px; fill: #5D434B; }
