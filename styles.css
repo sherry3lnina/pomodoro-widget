@@ -5,79 +5,53 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 200px; 
-    padding: 20px;     
+    padding: 20px;
     margin: 0;
     color: #8C6F78;
 }
 
-.mode-controls { 
-    display: flex; 
-    gap: 12px; 
-    margin-bottom: 19px; 
+/* Container to keep everything centered and aligned */
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
+/* Mode Buttons (Top) */
+.mode-controls { display: flex; gap: 10px; justify-content: center; width: 100%; }
 .mode-btn {
-    padding: 7px 17px; 
-    cursor: pointer; 
-    background-color: #E6BCC8;
-    border: none; 
-    border-radius: 4px; 
-    color: #5D434B; 
-    font-size: 0.8rem; /* Made slightly bigger for easier readability */
-    font-weight: bold;
-    transition: opacity 0.15s ease;
+    padding: 6px 12px; cursor: pointer; background-color: #E6BCC8;
+    border: none; border-radius: 6px; color: #5D434B; font-weight: bold; font-size: 0.8rem;
 }
 
-.mode-btn:hover {
-    opacity: 0.9;
-}
-
-/* FIXED: Changed gap and font-size from vw to fixed sizes so it doesn't break in Notion */
-#timer { 
-    display: flex; 
-    gap: 10px; 
-    font-size: 3.5rem; /* Fixed size that looks great on both mobile and desktop Notion */
-    font-weight: bold; 
-    margin-bottom: 20px; 
-    font-variant-numeric: tabular-nums; /* Keeps numbers from shifting tracking width */
-}
-
-/* FIXED: Changed padding from vw to px */
+/* Timer Boxes (Larger) */
+#timer { display: flex; gap: 15px; align-items: center; }
 .box {
-    background-color: #F8DFE8; 
-    padding: 10px 20px;
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #F8DFE8;
+    width: 100px; /* Larger than controls */
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* FIXED: Changed gap from vw to px */
+/* Control Buttons (Bottom - aligned with timer) */
 .icon-controls { 
     display: flex; 
-    gap: 16px; 
+    gap: 10px; 
+    justify-content: center; 
+    width: 100%; 
 }
-
 .icon-btn {
-    cursor: pointer; 
-    background-color: #E6BCC8; 
-    border: none;
-    border-radius: 8px; 
-    padding: 10px 18px; 
-    display: flex; 
-    align-items: center;
-    transition: opacity 0.15s ease;
+    cursor: pointer; background-color: #F8DFE8; border: none;
+    border-radius: 8px; width: 50px; height: 50px; /* Smaller than timer */
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.icon-btn:hover {
-    opacity: 0.9;
-}
-
-/* FIXED: Changed width/height from vw to fixed px so your play/stop icons stay perfectly proportioned */
-svg { 
-    width: 20px; 
-    height: 20px; 
-    fill: #5D434B;
-}
+svg { width: 24px; height: 24px; fill: #5D434B; }
