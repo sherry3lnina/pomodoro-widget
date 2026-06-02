@@ -22,7 +22,7 @@ body {
 
 .mode-controls { display: flex; gap: 8px; justify-content: center; }
 .mode-btn {
-    padding: 6px 12px; cursor: pointer; background-color: #E6BCC8;
+    padding: 8px 12px; cursor: pointer; background-color: #E6BCC8;
     border: none; border-radius: 6px; color: #5D434B; font-weight: bold; font-size: 0.75rem;
 }
 
@@ -30,8 +30,8 @@ body {
 .box {
     background-color: #F8DFE8;
     /* Fixed sizes keep them square and stable */
-    width: 90px; 
-    height: 90px;
+    width:75px; 
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,14 +39,15 @@ body {
     font-weight: bold;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px 1px 15px;
 }
 
-.icon-controls { display: flex; gap: 10px; justify-content: center; }
+.icon-controls { display: flex; gap: 16px; justify-content: center; }
 .icon-btn {
-    cursor: pointer; background-color: #F8DFE8; border: none;
+    cursor: pointer; background-color: #E6BCC8; border: none;
     border-radius: 8px; 
     /* Fixed sizes keep buttons from changing shape */
-    width: 45px; height: 45px; 
+    width: 50px; height: 45px; 
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
